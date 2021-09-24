@@ -2,6 +2,7 @@
   "colors": {
     "primary": "#D76A03",
     "primaryLight": "#F17604",
+    "primaryDark": "#B55903",
     "secondary": "#252323",
     "secondaryLight": "#353131",
     "white": "#F5F1ED"
@@ -16,5 +17,8 @@
   "fonts": {
     "general": "'Montserrat', sans-serif",
     "title": "'Crimson Text', serif"
+  },
+  "border": {
+    "box": "1px solid #white"
   }
 }

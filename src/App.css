@@ -8,3 +8,25 @@
   max-width: 50rem;
   justify-self: center;
 }
+
+.Container-enter > .page {
+  opacity: 0;
+}
+
+.Container-enter.Container-enter-active > .page {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+.Container-exit > .page {
+  opacity: 1;
+}
+
+.Container-exit.Container-exit-active > .page {
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}
+
+.Container-exit-done > .page {
+  opacity: 0;
+}

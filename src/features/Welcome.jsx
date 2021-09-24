@@ -1,8 +1,9 @@
 import React from 'react';
-import { H1, Panel, Text, Link } from 'components';
+import { Link as RouterLink } from 'react-router-dom';
+import { H1, Panel, Text, Link, Button } from 'components';
 
 const Welcome = () => (
-  <Panel>
+  <Panel className="page">
     <H1>Hello!</H1>
     <Text>
       Hi! I'm <strong>Xun Bruinbelly</strong>! And I am building something here for my tribe of tauren.
@@ -11,6 +12,9 @@ const Welcome = () => (
     <Text>
       For now, <Link href="https://shorturl.at/lnEKX" target="_blank" rel="noreferrer">here is a link</Link> to the content I will be implementing shortly.
     </Text>
+    <RouterLink to="/character" style={{ textDecoration: 'none' }}>
+      <Button>Build my character</Button>
+    </RouterLink>
     <Text>
       If you are here from Apex, well, the entirety of this CSS is written by hand!
       It is part of my training, coding along to <strong>CSS: The Definitive Guide</strong> by Eric A. Meyer & Estelle Weyl, published by O'Reilly.
