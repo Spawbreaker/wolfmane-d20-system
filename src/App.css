@@ -1,0 +1,9 @@
+.App {
+  display: grid;
+  text-align: center;
+}
+
+.Container {
+  max-width: 50rem;
+  justify-self: center;
+}
