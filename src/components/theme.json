@@ -1,6 +1,7 @@
 {
   "colors": {
     "primary": "#D76A03",
+    "primaryLight": "#F17604",
     "secondary": "#252323",
     "secondaryLight": "#353131",
     "white": "#F5F1ED"
@@ -11,5 +12,9 @@
     "medium": "0.5rem",
     "large": "1rem",
     "xLarge": "1.5rem"
+  },
+  "fonts": {
+    "general": "'Montserrat', sans-serif",
+    "title": "'Crimson Text', serif"
   }
 }

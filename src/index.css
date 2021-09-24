@@ -1,27 +1,15 @@
 /* Importing font styles */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat&display=swap');
 
-
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #252323;
-  color: #F5F1ED;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Crimson Text', serif;
   font-weight: 600;
-}
-
-a {
-  color: #DAD2BC;
-}
-
-a:visited {
-  color: #A99985;
 }
 
 code {
