@@ -5,6 +5,7 @@
     "primaryDark": "#B55903",
     "secondary": "#252323",
     "secondaryLight": "#353131",
+    "secondaryDisabled": "#CECACA",
     "tertiary": "#998770",
     "tertiaryLight": "#CCC3B7",
     "white": "#F5F1ED"

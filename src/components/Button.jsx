@@ -14,14 +14,14 @@ const Button = styled.button`
   justify-content: center;
   line-height: 1.5rem;
   padding: ${theme.sizing.large};
-  background-color: ${theme.colors.primary};
-  color: ${theme.colors.white};
+  background-color: ${({ disabled }) => disabled ? theme.colors.secondaryDisabled : theme.colors.primary};
+  color: ${({ disabled }) => disabled ? theme.colors.secondaryLight : theme.colors.white};
   white-space: nowrap;
   width: 100%;
   cursor: pointer;
 
   &:hover {
-    background-color: ${theme.colors.primaryLight};
+    background-color: ${({ disabled }) => disabled ? theme.colors.secondaryDisabled : theme.colors.primaryLight};
   }
 
   &:active {

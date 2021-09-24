@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Panel, Card, H3, Button, H2, Text, H4 } from 'components';
 import Races from 'db/races.json';
 import Ranks from 'db/ranks.json';
 import Armors from 'db/armors.json';
 import Shields from 'db/shields.json';
 import { Link } from 'react-router-dom';
+import { setArmor, setRace, setRank, setShield } from 'store/character';
 
 const CharacterBuild = () => {
-  const [race, setRace] = useState();
-  const [rank, setRank] = useState();
-  const [armor, setArmor] = useState();
-  const [shield, setShield] = useState();
+  const dispatch = useDispatch();
+
+  const race = useSelector((state) => state.character?.race);
+  const rank = useSelector((state) => state.character?.rank);
+  const armor = useSelector((state) => state.character?.armor);
+  const shield = useSelector((state) => state.character?.shield);
+
+  const changeRace = (val) => dispatch(setRace(val));
+  const changeRank = (val) => dispatch(setRank(val));
+  const changeArmor = (val) => dispatch(setArmor(val));
+  const changeShield = (val) => dispatch(setShield(val));
 
   return (
     <>
@@ -30,28 +39,28 @@ const CharacterBuild = () => {
           <Panel>
             <H3>Race</H3>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '8px' }}>
-              {Races.map(({ name }) => (<Card title={name} onClick={() => setRace(name)} active={race === name} />))}
+              {Races.map(({ name }) => (<Card title={name} onClick={() => changeRace(name)} active={race === name} />))}
             </div>
           </Panel>
           <Panel>
             <H3>Rank</H3>
-            {Ranks.map(({ name }) => <Card title={name} onClick={() => setRank(name)} active={rank === name} />)}
+            {Ranks.map(({ name }) => <Card title={name} onClick={() => changeRank(name)} active={rank === name} />)}
           </Panel>
           <Panel>
             <H3>Defensives</H3>
             <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gridGap: '8px' }}>
               <div>
                 <H4>Armor</H4>
-                {Armors.map(({ name }) => <Card title={name} onClick={() => setArmor(name)} active={armor === name} />)}
+                {Armors.map(({ name }) => <Card title={name} onClick={() => changeArmor(name)} active={armor === name} />)}
               </div>
               <div>
                 <H4>Shield</H4>
-                {Shields.map(({ name }) => <Card title={name} onClick={() => setShield(name)} active={shield === name} />)}
+                {Shields.map(({ name }) => <Card title={name} onClick={() => changeShield(name)} active={shield === name} />)}
               </div>
             </div>
           </Panel>
           <div style={{ alignSelf: 'center', justifySelf: 'center' }}>
-            <Button>Continue</Button>
+            <Link to="/stats"><Button disabled={!race || !rank || !armor || !shield}>Continue</Button></Link>
           </div>
         </div>
       </Panel>
