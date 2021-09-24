@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Heavy",
+    "hp": 4,
+    "dex": 0
+  },
+  {
+    "name": "Medium",
+    "hp": 3,
+    "dex": 1
+  },
+  {
+    "name": "Light",
+    "hp": 2,
+    "dex": 2
+  },
+  {
+    "name": "Scarce",
+    "hp": 1,
+    "dex": 3
+  },
+  {
+    "name": "None",
+    "hp": 0,
+    "dex": 4
+  }
+]

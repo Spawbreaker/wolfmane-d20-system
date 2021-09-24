@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Major",
+    "hp": 3
+  },
+  {
+    "name": "Minor",
+    "hp": 2
+  },
+  {
+    "name": "None",
+    "hp": 0
+  }
+]

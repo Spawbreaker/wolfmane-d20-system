@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Honored Kin",
+    "bonus": 8,
+    "skills": 2
+  },
+  {
+    "name": "Kin",
+    "bonus": 5,
+    "skills": 2
+  },
+  {
+    "name": "Greenhorn",
+    "bonus": 2,
+    "skills": 1
+  },
+  {
+    "name": "Newcomer",
+    "bonus": 2,
+    "skills": 1
+  }
+]
