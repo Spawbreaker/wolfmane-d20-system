@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://cdn.glitch.com/2b313a5e-56d3-4eb5-8eb7-d285fb80275d%2Fawoo-tiny.png?v=1632522751494",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

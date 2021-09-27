@@ -8,7 +8,7 @@ import theme from './theme.json';
 const StyledCard = styled.div`
   background-color: ${({ active }) => active ? theme.colors.tertiary : theme.colors.tertiaryLight};
   border: 1px solid ${theme.colors.tertiary};
-  padding: ${theme.sizing.small} ${theme.sizing.large};
+  padding: ${theme.sizing.small} ${theme.sizing.medium};
   margin-bottom: ${theme.sizing.small};
   border-radius: 1rem;
   min-width: 8rem;
@@ -18,7 +18,7 @@ const StyledCard = styled.div`
 
 const Card = ({ onClick, title, content, active }) => (
   <StyledCard onClick={onClick} active={active}>
-    <H3 color={theme.colors.secondary}>{title}</H3>
+    <H3 color={theme.colors.secondary} style={{ fontSize: '1.5rem' }}>{title}</H3>
     {content && <Text color={theme.colors.secondary}>{content}</Text>}
   </StyledCard>
 );

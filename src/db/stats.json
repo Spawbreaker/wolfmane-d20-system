@@ -1,0 +1,8 @@
+{
+  "str": { "name": "Strength", "description": "" },
+  "dex": { "name": "Dexterity", "description": "" },
+  "con": { "name": "Constitution", "description": "" },
+  "wis": { "name": "Wisdom", "description": "" },
+  "int": { "name": "Intelligence", "description": "" },
+  "cha": { "name": "Charisma", "description": "" }
+}
